@@ -1,0 +1,8 @@
+{
+  "name": "Remix Lector del pizarrón",
+  "description": "Lee la foto del pizarrón semanal de un call center, permite revisar y corregir los números por operador y descarga un Excel listo para usar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

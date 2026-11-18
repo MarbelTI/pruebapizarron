@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: "Segoe UI Variable Display", "Segoe UI", system-ui, sans-serif;
+    background-color: #f3f6f6;
+    color: #15262b;
+  }
+
+  .font-mono-tabular,
+  .tabular-nums {
+    font-family: "Segoe UI Variable Display", "Segoe UI", system-ui, sans-serif;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.office-card {
+  background-color: #ffffff;
+  border: 1px solid #dfe6e8;
+  border-radius: 12px;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04), 0 1px 3px rgba(16, 24, 40, 0.06);
+}
+
+.office-control {
+  border-radius: 8px;
+  min-height: 36px;
+  border: 1px solid #cfd8db;
+  background-color: #ffffff;
+  color: #15262b;
+  transition: border-color 120ms ease, box-shadow 120ms ease, background-color 120ms ease;
+}
+
+.office-control:focus {
+  outline: none;
+  border-color: #0b6e78;
+  box-shadow: 0 0 0 3px rgba(11, 110, 120, 0.22);
+}
+
+.office-btn-primary {
+  border-radius: 8px;
+  min-height: 36px;
+  background-color: #0b6e78;
+  color: #ffffff;
+  font-weight: 600;
+  transition: background-color 120ms ease, box-shadow 120ms ease;
+}
+
+.office-btn-primary:hover:not(:disabled) {
+  background-color: #095a62;
+}
+
+.office-btn-primary:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(11, 110, 120, 0.22);
+}
+
+.office-btn-secondary {
+  border-radius: 8px;
+  min-height: 36px;
+  background-color: #ffffff;
+  color: #15262b;
+  border: 1px solid #cfd8db;
+  font-weight: 500;
+  transition: background-color 120ms ease, border-color 120ms ease, box-shadow 120ms ease;
+}
+
+.office-btn-secondary:hover:not(:disabled) {
+  background-color: #f3f6f6;
+}
+
+.office-btn-secondary:focus-visible {
+  outline: none;
+  border-color: #0b6e78;
+  box-shadow: 0 0 0 3px rgba(11, 110, 120, 0.22);
+}
+
+.office-cell-input {
+  border-radius: 8px;
+  min-height: 36px;
+  border: 1px solid transparent;
+  background-color: transparent;
+  color: #15262b;
+  font-variant-numeric: tabular-nums;
+  transition: border-color 120ms ease, box-shadow 120ms ease, background-color 120ms ease;
+}
+
+.office-cell-input:hover:not(:disabled) {
+  border-color: #cfd8db;
+  background-color: #ffffff;
+}
+
+.office-cell-input:focus {
+  outline: none;
+  border-color: #0b6e78;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(11, 110, 120, 0.22);
+}
+
+.status-pill-ok {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 9px;
+  background-color: #e1f0f1;
+  color: #0b6e78;
+  line-height: 1.4;
+}
+
+.status-pill-review {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 9px;
+  background-color: #fdecea;
+  color: #b42318;
+  line-height: 1.4;
+}
+
+/* Remove default number input spin buttons for cleaner dense spreadsheets */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
